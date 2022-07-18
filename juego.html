@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="juego.css"/>
+</head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="title-container">
+          <h1>Bienvenid@ al juego</h1>
+          <h2>Elige piedra, papel o tijera</h2>
+        </div>
+
+        <img id="maquina-img" src="./Imagenes/piedra.svg" alt="">
+        <img id="user-img" src="./Imagenes/piedra.svg" alt="">
+      
+        <div class="botones-container">
+          <button class="boton" id= "piedra" type="button">
+            <img src="Imagenes/piedra.svg" alt="">
+          </button>
+
+            <button class="boton" id= "papel" type="button">
+            <img src="Imagenes/papel.svg" alt="">
+            </button>
+
+            <button class="boton" id= "tijera" type="button">
+            <img src="Imagenes/tijera.svg" alt="">
+            </button>
+
+        </div>
+
+        <div id="resultado"></div>
+        
+      </div>
+        
+        
+      <!-- Loader -->
+      <section class="loader">
+        <div class="numero-1">
+          <img src="./Imagenes/1.png" alt="1">
+        </div>
+        <div class="numero-2">
+          <img  src="./Imagenes/2.png" alt="2">
+        </div>
+        <div class="numero-3">
+          <img  src="./Imagenes/3.png" alt="3">
+        </div>
+      </section>
+
+    </div>
+
+
+    <script src="./juego.js"></script>
+
+  </body>
+</html>
