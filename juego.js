@@ -32,7 +32,7 @@ function play (userOpcion) {
 
   // isPlaying = true;
   
-  userImg.src = "./Imagenes/" + userOpcion + ".svg";
+  userImg.src = `./Imagenes/${userOpcion}.svg`;
 
   resultado.innerHTML = "PENSANDO...";
 
@@ -48,7 +48,7 @@ function play (userOpcion) {
     const opcionMaquina = calcMachineOption();
     const result = calcResult(userOpcion, opcionMaquina);
     
-    maquinaImg.src = "./Imagenes/" + opcionMaquina +".svg";
+    maquinaImg.src = `./Imagenes/${opcionMaquina}.svg`;
   
     switch (result){
       case empate:
@@ -66,8 +66,11 @@ function play (userOpcion) {
   }, 2000);
 }
 
+
 function calcMachineOption(userOpcion, opcionMaquina){
-  const number = Math.floor(Math.random() * 3);
+  const number = Math.floor(Math.random() * 4);
+  console.log(number);
+
   switch(number){
     case 0:
       return piedra;
